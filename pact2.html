@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #main{
+        background-color: yellow;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 15px;
+       }
+       #main2{
+        height: 500px;
+        /* border: 2px solid; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+       }
+       #red{
+        width: 65%;
+        height: 93%;
+        background-color: red;
+        font-size: 30px;
+        padding: 15px;
+       }
+       #green{
+        width: 30%;
+        height: 100%;
+        /* border: 5px solid greenyellow; */
+        display: grid;
+        gap: 20px;
+       }
+       #green>div{
+        /* border: 2px solid yellow; */
+        background-color: green;
+        font-size: 30px;
+        padding: 15px;
+       }
+       /* media query for small screen */
+       @media all and (min-width:320px) and (max-width:480px){
+
+        #main2{
+       display: block;
+       }
+        #red{
+       width: 100%;
+       }
+        #green{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+       }
+       }
+
+       /*media query for medium screen  */
+       @media all and(min-width:480px) and(max-width:768px){
+         #main2{
+       display: block;
+       }
+        #red{
+       width: 100%;
+       }
+        #green{
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+       }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="main" >
+        <h1>Navigation</h1>
+    </div>
+ <div id="main2">
+    <div id="red"> #Box</div>
+    <div id="green">
+    <div>box-1</div>
+    <div>box-2</div>
+    <div>box-3</div>
+    
+    </div>
+</div>
+</body>
+</html>

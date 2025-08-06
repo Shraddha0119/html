@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner{
+            background-color: rgb(78, 78, 182);
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .heading{
+            /* width: 400px; */
+            /* border:2px solid red; */
+            margin-left: 50px;
+            margin-top: 50px;
+           
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          
+        }
+        #baner>img{
+            width: 300px;
+        }
+      
+        button{
+            padding: 5px;
+            border-radius: 12px;
+            color:black;
+            font-size: 12px;
+            background-color: greenyellow;
+
+        }
+
+
+
+        /* serice section  style*/
+        #service{
+            /* height: 300px; */
+            margin-top: 30px;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 20px;
+        }
+       
+        .inner_service{
+            /* border: 2px solid; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+            line-height: 1;
+        }
+        
+        .inner_service>h3,p{
+            padding: 0 10px;
+           font-size: 22px;
+        }
+
+         .inner_service>div{
+            /* border: 5px solid grey; */
+            background-color: skyblue;
+           
+        }
+        .inner_service>div>img{
+           width:200px;
+           margin-left:13PX;
+           
+           /* border: 5px solid red; */
+        }
+
+        /* work section style */
+        #work{
+            margin-top:30px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        #work>div>img{
+            width: 100%;
+        }
+
+        #work>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        
+
+
+        /* media query for small screen */
+        @media all and (min-width:320px) and (max-width:480px){
+            #banner{
+                height: 400px;
+                flex-direction: column;
+                line-height: 0.5;
+            }
+            .heading{
+                margin: auto;
+                font-size:12px;
+            }
+            #banner>img{
+                width:280px;
+            }
+            
+
+            /* service section */
+             #service{
+            grid-template-columns: repeat(2,1fr);
+            }
+
+             /* work section mq */
+             #work{
+           
+            grid-template-columns: repeat(1,1fr);
+           
+            }
+    
+    }
+        
+         
+
+
+
+         /* media query for medium screen */
+        @media all and (min-width:481px) and (max-width:768px){
+            #banner{
+            
+                height: 400px;
+                flex-direction: column;
+                line-height: 0.5;
+            }
+            .heading{
+                margin: auto;
+                font-size: 15px;
+            }
+            #banner>img{
+                width:250px;
+            }
+
+            /* service section  */
+         #service{
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        /* work section mq */
+        #work{
+           
+            grid-template-columns: repeat(2,1fr);
+           
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+    <!-- banner section -->
+     <div id="banner">
+        <div class="heading">
+            <h1>Your health, our priority</h1>
+            <p> It is an honor and privilege to get to serve the public as a physician </p>
+            <button>known More</button>
+        </div>
+
+        <img src="https://www.veintreatmentclinic.com/wp-content/uploads/2020/09/NJ-team-cutout-2020.png">
+     </div>
+
+
+     <!-- service section -->
+      <div id="service">
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+        <div class="inner_service">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png">
+            </div>
+            <h3> Instant Video Consultation</h3>
+            <p> Connect within 15 sec</p>
+        </div>
+      </div>
+
+
+      <!-- heading -->
+       <h1 style="text-align: center;margin-top:100px;">Book and Appointment</h1>
+
+
+       <!-- work section -->
+        <div id="work">
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+            <div class="work_inner">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h1>Dentist</h1>
+                <p> Always on duty</p>
+
+            </div>
+
+        </div>
+       
+</body>
+</html>

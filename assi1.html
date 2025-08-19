@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-1</title>
+</head>
+<body>
+    <input id="first" type="number" placeholder="enter the 1st number"><br>
+    <input id="second" type="number" placeholder="enter the 2nd number"><br>
+    <br><br>
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">multipy</button>
+    <button onclick="div()">divide</button>
+</body>
+<script>
+    let first =document.getElementById("first")
+    let second =document.getElementById("second")
+
+    function add(){
+
+        let a= Number(first.value)
+        let b=Number(second.value)
+        let x=a+b
+        alert(x)
+        
+    }
+
+
+    function sub(){
+
+        let a= Number(first.value)
+        let b=Number(second.value)
+        let x=a-b
+        alert(x)
+    }
+
+     function mul(){
+
+        let a= Number(first.value)
+        let b=Number(second.value)
+        let x=a*b
+        alert(x)
+    }
+     function div(){
+
+        let a= Number(first.value)
+        let b=Number(second.value)
+        let x=a/b
+        alert(x)
+    }
+</script>
+</html>

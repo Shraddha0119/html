@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First H1</h1>
+    <h1>Second H1</h1>
+    <h3>first H3</h3>
+    <h3>Second H3</h3>
+    <h5>first H5</h5>
+    <h5>second h5</h5>
+    <h5>third h5</h5>
+
+    <div class="green">first div</div>
+    <div class="red"> second div</div>
+    <div class="blue">third div</div>
+
+    <p class="green">first p</p>
+    <p class="red">second p</p>
+    <p class="blue">third p</p>
+    <hr>
+    <button onclick="changeH1()">Change H1</button>
+    <button onclick="changeH3()">Change H3</button>
+    <button onclick="changeH5()">Change H5</button>
+    <button onclick="changeGreen()">change Green</button>
+    <button onclick="changeRed()">change Red</button>
+    <button onclick="changeBlue()">change blue</button>
+</body>
+<script>
+    function changeH1(){
+        let h1s=document.querySelectorAll("h1")
+        h1s.forEach((el)=>el.style.color="red");
+    }
+
+    function changeH3(){
+        let h3s=document.querySelectorAll("h3")
+        h3s.forEach((el)=>el.style.color="green");
+    }
+
+    function changeH5(){
+        let h5s=document.querySelectorAll("h5")
+        h5s.forEach((el)=>el.style.color="blue");
+    }
+
+    function changeGreen(){
+        let greens=document.querySelectorAll(".green");
+        greens.forEach((el)=>el.style.color="green");
+
+    }
+
+    function changeRed(){
+        let reds=document.querySelectorAll(".red");
+        reds.forEach((el)=>el .style.color="red");
+
+    }
+
+    function changeBlue(){
+        let blues=document.querySelectorAll(".blue");
+        blues.forEach((el)=>el.style.color="blue");
+    }
+</script>
+</html>
